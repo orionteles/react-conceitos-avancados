@@ -1,6 +1,6 @@
 import React from 'react'
-import Filmes from '../pages/filmes/Filmes'
 import Routes from '../Routes'
+import { Link } from 'react-router-dom'
 
 const Conteudo = () => {
     return (
@@ -16,7 +16,7 @@ const Conteudo = () => {
                             </div>{/* /.col */}
                             <div className="col-sm-6">
                                 <ol className="breadcrumb float-sm-right">
-                                    <li className="breadcrumb-item"><a href="#">Home</a></li>
+                                    <li className="breadcrumb-item"><Link to="#">Home</Link> </li>
                                     <li className="breadcrumb-item active">Dashboard v1</li>
                                 </ol>
                             </div>{/* /.col */}
@@ -42,10 +42,10 @@ const Conteudo = () => {
                                         <div className="card-tools">
                                             <ul className="nav nav-pills ml-auto">
                                                 <li className="nav-item">
-                                                    <a className="nav-link active" href="#revenue-chart" data-toggle="tab">Area</a>
+                                                    <Link className="nav-link active" to="#" data-toggle="tab">Area</Link> 
                                                 </li>
                                                 <li className="nav-item">
-                                                    <a className="nav-link" href="#sales-chart" data-toggle="tab">Donut</a>
+                                                    <Link className="nav-link" to="#" data-toggle="tab">Donut</Link> 
                                                 </li>
                                             </ul>
                                         </div>

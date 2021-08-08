@@ -12,7 +12,7 @@ const Filmes = () => {
 
     useEffect(() => {
         recuperarDados(page)
-    }, [])
+    }, [page])
 
     const recuperarDados = (pagina = 1) => {
         apiFilmes.get(`movie/popular?language=pt-BR&page=${pagina}`).then(dados => {
